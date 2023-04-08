@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Assignment</title>
+    <script src="https://kit.fontawesome.com/d97c7dac8e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="main-navbar">
+        <div class="logo-container">
+            <img src="https://status.realdevsquad.com/_next/image?url=%2FRDSLogo.png&w=48&q=75" alt="" />
+        </div>
+        <ol class="nav-list">
+            <li class="nav-item">Welcome</li>
+            <li class="nav-item">Events</li>
+            <li class="nav-item">Members</li>
+            <li class="nav-item">Crypto</li>
+            <li class="nav-item">Status</li>
+        </ol>
+        <div class="button-container">
+            <button class="add-button">
+          Sign In with Github <i class="fa-brands fa-github fa-lg"></i>
+        </button>
+        </div>
+    </nav>
+
+    <div class="pri-tabmenu-container">
+        <ol class="pri-tabmenu">
+            <li class="pri-tabmenu-item">
+                <button onClick="showPanel(0,'#E30464');">Tasks</button>
+            </li>
+            <div class="divider"></div>
+            <li class="pri-tabmenu-item">
+                <button onClick="showPanel(1,'#E30464');">Mine</button>
+            </li>
+            <div class="divider"></div>
+            <li class="pri-tabmenu-item">
+                <button onClick="showPanel(2, '#E30464');">DS</button>
+            </li>
+            <div class="divider"></div>
+            <li class="pri-tabmenu-item">
+                <button onClick="showPanel(3,'#E30464');">Open PRs</button>
+            </li>
+            <div class="divider"></div>
+            <li class="pri-tabmenu-item">
+                <button onClick="showPanel(4, '#E30464');">State PRs</button>
+            </li>
+            <div class="divider"></div>
+            <li class="pri-tabmenu-item">
+                <button onClick="showPanel(5,'#E30464');">Idle Users</button>
+            </li>
+        </ol>
+    </div>
+    <div class="pri-tabpanels">
+        <div class="pri-tabpanel">
+            <div class="tab1-vontainer">
+                <div class="sec-tab-container">
+                    <button class="tab-button" onclick="showsecPanel(0);">
+              ASSIGNED
+            </button>
+
+                    <button class="tab-button" onclick="showsecPanel(1);">
+              COMPLETED
+            </button>
+                    <button class="tab-button" onclick="showsecPanel(2);">
+              AVAILABLE
+            </button>
+                    <button class="tab-button" onclick="showsecPanel(3);">
+              IN_PROGRESS
+            </button>
+                    <button class="tab-button" onclick="showsecPanel(4);">
+              NEEDS_REVIEW
+            </button>
+                    <button class="tab-button" onclick="showsecPanel(5);">
+              IN_REVIEW
+            </button>
+                    <button class="tab-button" onclick="showsecPanel(6);">
+              VERIFIED
+            </button>
+                    <button class="tab-button" onclick="showsecPanel(7);">
+              MERGED
+            </button>
+                </div>
+                <div class="sec-tabpanel">
+                    <div class="card-container">
+                        <div class="card" start_date="2023/02/01" due_date="2023/01/03" progress="10">
+
+                            <div class="card-header">
+                                <h2 class="card-title">
+                                    Mobile App Signn Github Deeplinking
+                                </h2>
+
+                                <h4 class="card-status">
+                                    Status : <span class="status-span">Assigned</span>
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <h3>
+                                    <i class="fa-regular fa-calendar"></i> Due Date :
+                                    <span class="due-span"> a month ago</span>
+                                </h3>
+                                <div class="progress-container">
+                                    <div class="progress-indicator">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <h5 class="progress-text">10% Completed</h5>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h4 class="card-start">Started <span class="start-span">Hello</span></h4>
+
+                                <h4 class="card-assignee">
+                                    Assignee : <span>Shreya</span>
+                                    <img src="https://status.realdevsquad.com/_next/image?url=%2FdummyProfile.png&w=48&q=75" alt="" />
+                                </h4>
+                            </div>
+
+                        </div>
+                        <div class="card" start_date="2022/01/02" due_date="2023/12/04" progress="80">
+
+                            <div class="card-header">
+                                <h2 class="card-title">
+                                    Mobile App Signn Github Deeplinking
+                                </h2>
+
+                                <h4 class="card-status">
+                                    Status : <span class="status-span">Assigned</span>
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <h3>
+                                    <i class="fa-regular fa-calendar"></i> Due Date :
+                                    <span class="due-span"> a month ago</span>
+                                </h3>
+                                <div class="progress-container">
+                                    <div class="progress-indicator">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <h5 class="progress-text">10% Completed</h5>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h4 class="card-start">Started <span> 2 month ago</span></h4>
+
+                                <h4 class="card-assignee">
+                                    Assignee : <span>Shreya</span>
+                                    <img src="https://status.realdevsquad.com/_next/image?url=%2FdummyProfile.png&w=48&q=75" alt="" />
+                                </h4>
+                            </div>
+
+                        </div>
+                        <div class="card" start_date="2023/02/01" due_date="2023/01/03" progress="10">
+
+                            <div class="card-header">
+                                <h2 class="card-title">
+                                    Mobile App Signn Github Deeplinking
+                                </h2>
+
+                                <h4 class="card-status">
+                                    Status : <span class="status-span">Assigned</span>
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <h3>
+                                    <i class="fa-regular fa-calendar"></i> Due Date :
+                                    <span class="due-span"> a month ago</span>
+                                </h3>
+                                <div class="progress-container">
+                                    <div class="progress-indicator">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <h5 class="progress-text">10% Completed</h5>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h4 class="card-start">Started <span class="start-span">Hello</span></h4>
+
+                                <h4 class="card-assignee">
+                                    Assignee : <span>Shreya</span>
+                                    <img src="https://status.realdevsquad.com/_next/image?url=%2FdummyProfile.png&w=48&q=75" alt="" />
+                                </h4>
+                            </div>
+
+                        </div>
+                        <div class="card" start_date="2022/03/15" due_date="2023/04/07" progress="100">
+
+                            <div class="card-header">
+                                <h2 class="card-title">
+                                    Mobile App Signn Github Deeplinking
+                                </h2>
+
+                                <h4 class="card-status">
+                                    Status : <span class="status-span">Assigned</span>
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                                <h3>
+                                    <i class="fa-regular fa-calendar"></i> Due Date :
+                                    <span class="due-span"> a month ago</span>
+                                </h3>
+                                <div class="progress-container">
+                                    <div class="progress-indicator">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <h5 class="progress-text">10% Completed</h5>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <h4 class="card-start">Started <span> 2 month ago</span></h4>
+
+                                <h4 class="card-assignee">
+                                    Assignee : <span>Shreya</span>
+                                    <img src="https://status.realdevsquad.com/_next/image?url=%2FdummyProfile.png&w=48&q=75" alt="" />
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="sec-tabpanel">Sec 2</div>
+                <div class="sec-tabpanel">Sec 3</div>
+                <div class="sec-tabpanel">Sec 4</div>
+                <div class="sec-tabpanel">Sec 5</div>
+                <div class="sec-tabpanel">Sec 6</div>
+                <div class="sec-tabpanel">Sec 7</div>
+                <div class="sec-tabpanel">Sec 8</div>
+            </div>
+        </div>
+        <div class="pri-tabpanel">Tab 2</div>
+        <div class="pri-tabpanel">Tab 3</div>
+        <div class="pri-tabpanel">Tab 4</div>
+        <div class="pri-tabpanel">Tab 5</div>
+        <div class="pri-tabpanel">Tab 6</div>
+    </div>
+
+    <script type=" text/javascript " src="./index.js "></script>
+</body>
+
+</html>
